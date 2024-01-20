@@ -1,6 +1,6 @@
 ﻿namespace SnackAndLadderLLD;
 
-public partial class Game(IBoard board, IDiceManager diceManager, IEnumerable<Player> players)
+public class Game(IBoard board, IDiceManager diceManager, IEnumerable<Player> players)
 {
     private IBoard Board { get; init; } = board;
     private int CurrentPlayer { get; set; } = 0;
@@ -62,6 +62,7 @@ public partial class Game(IBoard board, IDiceManager diceManager, IEnumerable<Pl
         if (IsWinningPosition(newPosition))
         {
             Winner = player;
+            Status = GameStatus.Won;
         }
     }
 }
