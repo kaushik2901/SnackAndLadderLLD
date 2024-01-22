@@ -26,8 +26,6 @@ while (game.Status != GameStatus.Won)
     game.Next();
 }
 
-var winningPlater = game.GetWinner();
+var winner = game.GetWinner();
 
-Console.WriteLine($"Winner is {winningPlater.Name}");
-
-game.Reset();
+Console.WriteLine($"Winner is {winner.Name}");
