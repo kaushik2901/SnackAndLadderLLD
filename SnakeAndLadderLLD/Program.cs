@@ -29,3 +29,5 @@ while (game.Status != GameStatus.Won)
 var winner = game.GetWinner();
 
 Console.WriteLine($"Winner is {winner.Name}");
+
+game.Reset();
