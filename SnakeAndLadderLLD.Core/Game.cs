@@ -1,4 +1,4 @@
-﻿namespace SnackAndLadderLLD;
+﻿namespace SnackAndLadderLLD.Core;
 
 public class Game(IBoard board, IDiceManager diceManager, IEnumerable<Player> players)
 {

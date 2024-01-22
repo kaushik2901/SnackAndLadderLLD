@@ -1,4 +1,4 @@
-﻿using SnackAndLadderLLD;
+﻿using SnackAndLadderLLD.Core;
 
 var board = new BoardBuilder()
     .WithSize(10)
@@ -29,3 +29,5 @@ while (game.Status != GameStatus.Won)
 var winningPlater = game.GetWinner();
 
 Console.WriteLine($"Winner is {winningPlater.Name}");
+
+game.Reset();

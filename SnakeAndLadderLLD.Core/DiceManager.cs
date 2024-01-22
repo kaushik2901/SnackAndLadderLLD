@@ -1,4 +1,4 @@
-﻿namespace SnackAndLadderLLD;
+﻿namespace SnackAndLadderLLD.Core;
 
 public class DiceManager(int numberOfDice) : IDiceManager
 {

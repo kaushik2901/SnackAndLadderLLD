@@ -1,4 +1,4 @@
-﻿namespace SnackAndLadderLLD;
+﻿namespace SnackAndLadderLLD.Core;
 
 public enum GameStatus
 {
