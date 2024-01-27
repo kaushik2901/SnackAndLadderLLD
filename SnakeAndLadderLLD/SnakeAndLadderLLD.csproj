@@ -7,8 +7,4 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\SnakeAndLadderLLD.Core\SnakeAndLadderLLD.Core.csproj" />
-  </ItemGroup>
-
 </Project>

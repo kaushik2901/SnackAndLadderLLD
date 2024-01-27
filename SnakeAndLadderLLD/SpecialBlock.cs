@@ -1,3 +1,3 @@
-﻿namespace SnackAndLadderLLD.Core;
+﻿namespace SnakeAndLadderLLD;
 
 public record SpecialBlock(int StartPosition, int EndPosition);

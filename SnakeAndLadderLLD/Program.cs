@@ -1,4 +1,4 @@
-﻿using SnackAndLadderLLD.Core;
+﻿using SnakeAndLadderLLD;
 
 var board = new BoardBuilder()
     .WithSize(10)
