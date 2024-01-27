@@ -26,7 +26,7 @@ while (game.Status != GameStatus.Won)
     game.Next();
 }
 
-var winner = game.GetWinner();
+var winner = game.Winner;
 
 Console.WriteLine($"Winner is {winner.Name}");
 

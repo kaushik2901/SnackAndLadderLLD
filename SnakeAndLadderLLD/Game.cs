@@ -2,15 +2,15 @@
 
 public class Game(IBoard board, IDiceManager diceManager, IEnumerable<Player> players)
 {
+    private Player? _winner = null;
+
     private IBoard Board { get; init; } = board;
     private int CurrentPlayer { get; set; } = 0;
     private IDiceManager DiceManager { get; init; } = diceManager;
     private Player[] Players { get; init; } = players.ToArray();
-    private Player? Winner { get; set; } = null;
 
     public GameStatus Status { get; private set; } = GameStatus.Ready;
-
-    public Player GetWinner() => Winner ?? throw new Exception("Winner not found");
+    public Player Winner { get { return _winner ?? throw new Exception("Winner not found"); } }
 
     public void Next()
     {
@@ -61,7 +61,7 @@ public class Game(IBoard board, IDiceManager diceManager, IEnumerable<Player> pl
 
         if (IsWinningPosition(newPosition))
         {
-            Winner = player;
+            _winner = player;
             Status = GameStatus.Won;
         }
     }
