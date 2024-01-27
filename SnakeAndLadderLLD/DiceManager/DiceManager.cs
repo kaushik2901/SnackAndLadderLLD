@@ -1,4 +1,4 @@
-﻿namespace SnakeAndLadderLLD;
+﻿namespace SnakeAndLadderLLD.DiceManager;
 
 public class DiceManager(int numberOfDice) : IDiceManager
 {
