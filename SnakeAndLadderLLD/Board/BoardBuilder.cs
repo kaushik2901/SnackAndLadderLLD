@@ -1,4 +1,4 @@
-﻿namespace SnakeAndLadderLLD;
+﻿namespace SnakeAndLadderLLD.Board;
 
 public class BoardBuilder
 {

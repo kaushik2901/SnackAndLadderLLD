@@ -1,4 +1,4 @@
-﻿namespace SnakeAndLadderLLD;
+﻿namespace SnakeAndLadderLLD.Board;
 
 public class Board(int size, IDictionary<int, int> specialBlocks) : IBoard
 {

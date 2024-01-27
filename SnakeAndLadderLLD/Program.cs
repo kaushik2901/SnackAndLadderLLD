@@ -1,4 +1,6 @@
 ﻿using SnakeAndLadderLLD;
+using SnakeAndLadderLLD.Board;
+using SnakeAndLadderLLD.DiceManager;
 using SnakeAndLadderLLD.Game;
 
 var board = new BoardBuilder()
