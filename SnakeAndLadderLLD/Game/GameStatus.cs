@@ -1,4 +1,4 @@
-﻿namespace SnakeAndLadderLLD;
+﻿namespace SnakeAndLadderLLD.Game;
 
 public enum GameStatus
 {

@@ -1,4 +1,5 @@
 ﻿using SnakeAndLadderLLD;
+using SnakeAndLadderLLD.Game;
 
 var board = new BoardBuilder()
     .WithSize(10)

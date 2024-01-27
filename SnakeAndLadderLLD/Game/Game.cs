@@ -1,4 +1,6 @@
-﻿namespace SnakeAndLadderLLD;
+﻿using SnakeAndLadderLLD.DiceManager;
+
+namespace SnakeAndLadderLLD.Game;
 
 public class Game(IBoard board, IDiceManager diceManager, IEnumerable<Player> players)
 {
