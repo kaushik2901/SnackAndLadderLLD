@@ -2,6 +2,7 @@
 
 public class DiceManager(int numberOfDice) : IDiceManager
 {
+    private readonly int Number = 9;
     private int NumberOfDice { get; init; } = numberOfDice;
 
     private const int MAX_VALUE_FOR_SINGLE_DICE = 6;
